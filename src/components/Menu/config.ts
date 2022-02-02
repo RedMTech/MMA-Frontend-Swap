@@ -4,7 +4,7 @@ const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://www.projecttokenmma.it//',
+    href: 'https://www.projecttokenmma.it/',
   },
   {
     label: 'Trade',

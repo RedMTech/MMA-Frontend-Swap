@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ThemeProvider as SCThemeProvider } from 'styled-components'
+import { ThemeProvider as MMAThemeProvider } from 'styled-components'
 import { light, dark } from '@pancakeswap-libs/uikit'
 
 const CACHE_KEY = 'IS_DARK'
@@ -26,7 +26,7 @@ const ThemeContextProvider: React.FC = ({ children }) => {
 
   return (
     <ThemeContext.Provider value={{ isDark, toggleTheme }}>
-      <SCThemeProvider theme={isDark ? dark : light}>{children}</SCThemeProvider>
+      <MMAThemeProvider theme={isDark ? light : dark}>{children}</MMAThemeProvider>
     </ThemeContext.Provider>
   )
 }
